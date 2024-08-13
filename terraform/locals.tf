@@ -9,10 +9,12 @@ resource "random_pet" "bucket_suffix" {
 locals {
   content_types = {
     ".html" : "text/html",
-    ".css" : "text/css",
-    ".js" : "application/javascript",
-    ".woff2" : "font/woff2",
-    ".png" : "image/png",
-    ".min.js" : "application/javascript"
+    ".css"  : "text/css",
+    ".js"   : "application/javascript",
+    ".woff2": "font/woff2",
+    ".png"  : "image/png",
+    ".jpg"  : "image/jpeg",
+    ".jpeg" : "image/jpeg",
+    ".min.js": "application/javascript"
   }
 }
