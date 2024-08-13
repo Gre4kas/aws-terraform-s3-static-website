@@ -37,9 +37,9 @@ resource "aws_s3_bucket_policy" "bucket_policy" {
 }
 
 resource "aws_s3_object" "file" {
-  for_each     = fileset(path.module, "content/**/*.{html,css,js}")
+  for_each     = fileset(path.module, "ready-html/**/*.{html,css,js,woff2,png,min.js}")
   bucket       = aws_s3_bucket.bucket.id
-  key          = replace(each.value, "/^content//", "")
+  key          = replace(each.value, "/^ready-html//", "")
   source       = each.value
   content_type = lookup(local.content_types, regex("\\.[^.]+$", each.value), null)
   source_hash  = filemd5(each.value)
