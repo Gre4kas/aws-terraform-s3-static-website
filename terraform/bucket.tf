@@ -56,11 +56,3 @@ resource "aws_s3_object" "file" {
   source_hash  = filemd5("${path.module}/../ready-html/${each.value}")
 }
 
-resource "aws_s3_bucket_website_configuration" "hosting" {
-  bucket = aws_s3_bucket.bucket.id
-
-  index_document {
-    suffix = "index.html"
-  }
-}
-
