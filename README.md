@@ -102,4 +102,4 @@ After the process completes, all related AWS resources will be deleted.
 
 This README provided a comprehensive guide to deploying a static website using AWS services with Terraform. By following the steps outlined, you can easily set up, configure, and manage a scalable and secure static website hosted on AWS.
 
-For future improvements, consider integrating automated CI/CD pipelines for continuous deployment.
+For future improvements, consider integrating automated CI/CD pipelines for continuous deployment. 
