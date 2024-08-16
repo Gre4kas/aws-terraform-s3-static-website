@@ -1,6 +1,6 @@
 # Domain name that you have registered
 variable "domain-name" {
-  default = "example.com" // Modify as per your domain name
+  default = "test.gre4ka.fun" // Modify as per your domain name
 }
 
 variable "region" {
