@@ -8,7 +8,7 @@ This project aims to deploy a static website using AWS services, orchestrated by
 
 ### Architecture Diagram
 
-![Static Website Infrastructure Diagram](images/staticWebsite.jpg)
+![Static Website Infrastructure Diagram](images/static-website.jpg)
 
 The diagram above illustrates the flow of traffic when a user accesses the domain. Traffic is routed to CloudFront, which then fetches the static content from the S3 bucket. The ACM certificate secures the connection by providing SSL/TLS encryption, ensuring that all traffic is encrypted.
 
